@@ -23,3 +23,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 # 第一天
 
 创建头部
+
+# 第二条
+
+添加头部滚动区域
