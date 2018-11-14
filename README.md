@@ -24,6 +24,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 创建头部
 
+```
 在 style 标签中导入 scss
 
 1. import 前面需要使用 “@” 符号
@@ -52,7 +53,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 .header-swipe >>> .mint-swipe-indicator.is-active {
   background: $activeColor;
 }
-
+```
 
 # 第二天
 
@@ -61,6 +62,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 # 第三天
 
 添加导航内容图标区域
+
+```
 头部图标区域，需要对数据做处理，数据拿过来的时候应该是一个 一维数组，需要把这个 一维数组 转成 二维数组
 computedIcons: function() {
     this.icons.forEach((item, index) => {
@@ -86,6 +89,7 @@ computedIcons: function() {
         </mt-swipe-item>
     </mt-swipe>
 </section>
+```
 
 # 第四天
 
