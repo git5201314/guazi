@@ -1,0 +1,14 @@
+$bgColor: #fff;
+
+$activeColor: #22a038;
+
+$fontColor: #303741;
+
+$iconWidth: .1rem;
+$iconHeight: .1rem;
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

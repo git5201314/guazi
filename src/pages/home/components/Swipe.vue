@@ -21,12 +21,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~@/assets/css/variable.scss";
 .header-swipe /deep/ .mint-swipe-indicator {
-  background: #fff !important;
-  opacity: 0.8 !important;
+  width: $iconWidth;
+  height: $iconHeight;
+  background: $bgColor;
+  opacity: 0.8;
 }
 .header-swipe /deep/ .mint-swipe-indicator.is-active {
-  background: #22a038 !important;
+  background: $activeColor;
 }
 
 .header-swipe {

@@ -1,14 +1,21 @@
 <template>
-    <div class="index-header">
+    <div class="main" id="main">
+      <div class="index-header">
         <home-search></home-search>
         <home-swipe :items="swipeList"></home-swipe>
-        test
+      </div>
+      <div class="home-content">
+          <home-content></home-content>
+          <home-toutiao></home-toutiao>
+      </div>
     </div>
 </template>
 
 <script type="text/javascript">
 import HomeSwipe from "./components/Swipe";
 import HomeSearch from "./components/Search";
+import HomeContent from "./components/Content";
+import HomeToutiao from "./components/Toutiao";
 
 export default {
   data() {
@@ -18,7 +25,9 @@ export default {
   },
   components: {
     HomeSwipe,
-    HomeSearch
+    HomeSearch,
+    HomeContent,
+    HomeToutiao
   },
   methods: {
     getHomeInfo() {
@@ -43,5 +52,8 @@ export default {
 <style scoped lang="scss">
 .index-header {
   height: 3.26rem;
+}
+.home-content {
+  background-color: #f5f7fa;
 }
 </style>

@@ -1,5 +1,5 @@
-import '@/assets/reset.css'
-import '@/assets/border.css'
+import '@/assets/css/reset.css'
+import '@/assets/css/border.css'
 import '&/mint-ui/lib/style.min.css'
 import '@/assets/iconfont.css'
 

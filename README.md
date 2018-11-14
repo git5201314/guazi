@@ -24,6 +24,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 创建头部
 
-# 第二条
+# 第二天
 
 添加头部滚动区域
+
+# 第三天
+
+添加导航内容区域
+
+# 第四天
+
+瓜子头条动画制作
