@@ -111,8 +111,10 @@ export default {
         list = this.$refs.headlinesList;
 
       list.addEventListener("transitionend", function() {
-        if (v.index === list.firstElementChild.childElementCount / 2 + 1) {
-          v.index = 1;
+        let len = list.firstElementChild.childElementCount / 2 + 1;
+        if (v.index >= len) {
+          v.index %= len;
+          v.index = v.index === 0 ? 1 : v.index;
           v.h = 0;
           list.style.transform = `translate3d(0, 0rem, 0)`;
           list.style.transition = "none";
