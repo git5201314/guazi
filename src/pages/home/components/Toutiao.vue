@@ -76,7 +76,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>    
 </template>
 
 <script>
@@ -146,6 +146,17 @@ export default {
   padding: 0.3rem 0.4rem;
   background-color: #fff;
   overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #eff2f6;
+    position: absolute;
+    left: 0.4rem;
+    right: 0.4rem;
+    margin-top: -0.3rem;
+  }
 
   .headlines-list {
     height: 0.68rem;

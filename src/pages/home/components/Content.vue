@@ -126,7 +126,7 @@ $width: 100%;
 //   }
 // }
 .nav-content {
-  background-color: #f5f7fa;
+  background-color: #fff;
   height: 3.83rem;
   padding-bottom: 0.14rem;
 

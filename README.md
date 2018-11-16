@@ -53,6 +53,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 .header-swipe >>> .mint-swipe-indicator.is-active {
   background: $activeColor;
 }
+
+书写 css3 样式的时候，只需要写 简写
+transform: scaleY(0.5);
+vue-cli 构建工具，会自动加上 浏览器厂商  前缀
+
 ```
 
 # 第二天
@@ -81,7 +86,7 @@ computedIcons: function() {
     <mt-swipe :auto="0" class="content-swipe">
         <mt-swipe-item v-for="(page, index) of computedIcons" :key="index">
             <p class="clearfix nav-content-item" v-for="item of page" :key="item.id">
-                    <a href="javascript:void(0);" :style="item.imgUrl">
+                <a href="javascript:void(0);" :style="item.imgUrl">
                     {{item.msg}}
                     <span class="iconfree" v-if="item.free">{{item.freeText}}</span>
                 </a>
@@ -94,3 +99,7 @@ computedIcons: function() {
 # 第四天
 
 瓜子头条动画制作
+
+# 第五天
+
+热门二手车 开发
