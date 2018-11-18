@@ -111,3 +111,7 @@ computedIcons: function() {
 # 第七天
 
 瓜子金融 制作
+
+# 第八天
+
+底部导航列表 制作

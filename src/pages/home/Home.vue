@@ -29,6 +29,10 @@
           <!-- 瓜子金融 start -->
           <home-finance></home-finance>
           <!-- 瓜子金融 end -->
+
+          <!-- 底部导航 start -->
+          <home-foot-tab></home-foot-tab>
+          <!-- 底部导航 end -->
       </div>
     </div>
 </template>
@@ -41,6 +45,7 @@ import HomeToutiao from "./components/Toutiao";
 import HomeSecondCar from "./components/SecondCar";
 import HomeMaoDouCar from "./components/BaoMai";
 import HomeFinance from "./components/Finance";
+import HomeFootTab from "./components/FootTab";
 
 export default {
   data() {
@@ -55,7 +60,8 @@ export default {
     HomeToutiao,
     HomeSecondCar,
     HomeMaoDouCar,
-    HomeFinance
+    HomeFinance,
+    HomeFootTab
   },
   methods: {
     getHomeInfo() {

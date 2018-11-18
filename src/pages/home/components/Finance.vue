@@ -61,6 +61,7 @@ export default {
 @import "~@/assets/css/variable.scss";
 .index-maodou-car {
   border-top: 0.12rem solid #f5f7fa;
+  border-bottom: 0.12rem solid #f5f7fa;
   background-color: #fff;
 
   .column-title {
@@ -105,14 +106,19 @@ export default {
     padding: 0 0.4rem;
     overflow: hidden;
 
+    .operate-item-0 {
+      border-left: 1px solid #eff2f6;
+    }
+
     .operate-item {
       width: 33.3%;
-      height: 2.52rem;
       position: relative;
       float: left;
       padding: 0 0.04rem 0.04rem 0;
       box-sizing: border-box;
       overflow: hidden;
+      border-right: 1px solid #eff2f6;
+      border-top: 1px solid #eff2f6;
 
       a {
         display: block;
@@ -153,8 +159,6 @@ export default {
       }
 
       .operate-item-img {
-        width: 2.2rem;
-        height: 2.2rem;
         margin: 0 auto;
         overflow: hidden;
 
