@@ -25,6 +25,10 @@
           <!-- 毛豆新车 start -->
           <home-mao-dou-car></home-mao-dou-car>
           <!-- 毛豆新车 end -->
+
+          <!-- 瓜子金融 start -->
+          <home-finance></home-finance>
+          <!-- 瓜子金融 end -->
       </div>
     </div>
 </template>
@@ -36,6 +40,7 @@ import HomeContent from "./components/Content";
 import HomeToutiao from "./components/Toutiao";
 import HomeSecondCar from "./components/SecondCar";
 import HomeMaoDouCar from "./components/BaoMai";
+import HomeFinance from "./components/Finance";
 
 export default {
   data() {
@@ -49,7 +54,8 @@ export default {
     HomeContent,
     HomeToutiao,
     HomeSecondCar,
-    HomeMaoDouCar
+    HomeMaoDouCar,
+    HomeFinance
   },
   methods: {
     getHomeInfo() {
