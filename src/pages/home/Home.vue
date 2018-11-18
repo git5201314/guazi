@@ -21,6 +21,10 @@
           <!-- 热门二手车 start -->
           <home-second-car></home-second-car>
           <!-- 热门二手车 end -->
+
+          <!-- 毛豆新车 start -->
+          <home-mao-dou-car></home-mao-dou-car>
+          <!-- 毛豆新车 end -->
       </div>
     </div>
 </template>
@@ -30,7 +34,8 @@ import HomeSwipe from "./components/Swipe";
 import HomeSearch from "./components/Search";
 import HomeContent from "./components/Content";
 import HomeToutiao from "./components/Toutiao";
-import HomeSecondCar from './components/SecondCar';
+import HomeSecondCar from "./components/SecondCar";
+import HomeMaoDouCar from "./components/BaoMai";
 
 export default {
   data() {
@@ -43,7 +48,8 @@ export default {
     HomeSearch,
     HomeContent,
     HomeToutiao,
-    HomeSecondCar
+    HomeSecondCar,
+    HomeMaoDouCar
   },
   methods: {
     getHomeInfo() {
