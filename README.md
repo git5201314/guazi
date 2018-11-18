@@ -115,3 +115,48 @@ computedIcons: function() {
 # 第八天
 
 底部导航列表 制作
+
+# 第九天
+
+城市列表制作
+
+```
+使用axios 发送 ajax请求
+axios.get("/api/city.json").then(function(res) {
+    var data = res.data;
+    if (data.ret) {
+    data = data.data;
+    v.city = data.city;
+    v.cities = data.cities;
+    v.hotCities = data.hotCities;
+    }
+});
+/api/city.json 是本地的一个静态文件，在 /static/mock/city.json，在 /confit/index.js配置路径映射
+proxyTable: {
+    '/api': {
+        target: 'http://localhost:8082',
+        pathRewrite: {
+            '^/api': '/static/mock'
+        }
+    }
+}
+
+城市列表过多，使用 better-scroll，可以做出类似 原生app 的滚动效果
+1. 安装better-scroll
+    npm install better-scroll --save
+2. 导入
+    import BScroll from 'better-scroll'
+3. 在 mounted 钩子函数中使用
+    mounted() {
+        this.scroll = new BScroll(this.$refs.con);
+    }
+注意：要使用 better-scroll，html 结构有强制要求
+<div class="wrapper">   // 这一层要设置 overflow: hidden
+  <ul class="content">  // 滚动内容区域
+    <li>...</li>
+    <li>...</li>
+    ...
+  </ul>
+  <!-- 这里可以放一些其它的 DOM，但不会影响滚动 -->
+</div>
+```

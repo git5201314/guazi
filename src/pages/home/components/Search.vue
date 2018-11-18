@@ -1,11 +1,12 @@
 <template>
     <div class="header-search" id="open-search">
-        <a href="javascript:void(0);" class="local-city">上海
+        <router-link to="/city" class="local-city">上海
           <span class="iconfont">&#xe62d;</span>
-        </a>
+        </router-link>
         <div class="search-ipt">
-          <span class="head-icon-search iconfont">&#xe61a;</span>
-          搜索您要的车
+          <!-- <span class="head-icon-search iconfont">&#xe61a;</span>
+          搜索您要的车 -->
+          <input type="text" placeholder="输入城市名称或拼音" />
         </div>
         <a href="javascript:void(0);" class="head-icon-im iconfont">&#xe641;</a>
         <a href="javascript:void(0);" class="head-icon-user iconfont">&#xe607;</a>
@@ -50,10 +51,17 @@ export default {
     flex: 1;
     line-height: 0.614rem;
     color: #bec5cf;
-    background: #eff2f6;
+    background: #fff;
     text-align: center;
     border-radius: 0.4rem;
     font-size: 0.27rem;
+
+    input {
+      width: 90%;
+      padding: 0 0.1rem;
+      color: #666;
+      border: none;
+    }
 
     .head-icon-search {
       font-size: 0.27rem;
