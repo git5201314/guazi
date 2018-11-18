@@ -7,10 +7,10 @@
         </ul>
         <div class="tab-con">
             <ul class="on">
-                <li class="list-item" data-clue="53096049" data-type="city" data-gzlog="tracking_type=click&amp;eventid=0290230000000118&amp;carid=53096049&amp;position=0&amp;is_baomai=0" data-scroll-track="53096049@0@0@0&amp;92803073">
-                    <a class="car-info" href="/huzhou/69e8757887ea5fd5x/?fr_page=index&amp;fr_pos=rec&amp;fr_no=0&amp;from=index">
+                <li class="list-item">
+                    <a class="car-info" href="javascript:void(0);">
                         <div class="car-img">
-                            <img data-role="lazyloadImg" class="js-lazy-load" src="https://image.guazistatic.com/gz01181006/10/49/01efda77d9340fd709717043c5b4dcba.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" data-url="https://image.guazistatic.com/gz01181006/10/49/01efda77d9340fd709717043c5b4dcba.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" alt="路虎 揽胜 2012款 5.0 V8 NA(进口)">
+                            <img class="js-lazy-load" src="/static/images/tabnav-img1.jpg" alt="路虎 揽胜 2012款 5.0 V8 NA(进口)">
                         </div>
                         <h3 class="car-name">路虎 揽胜 2012款 5.0 V8 NA(进口)</h3>
                         <div class="car-km">
@@ -25,10 +25,10 @@
                         <p class="page-size" style="display: none">1/50</p>
                     </a>
                 </li>
-                <li class="list-item" data-clue="52999927" data-type="city" data-gzlog="tracking_type=click&amp;eventid=0290230000000118&amp;carid=52999927&amp;position=1&amp;is_baomai=0" data-scroll-track="52999927@0@1@0&amp;92803073">
-                    <a class="car-info" href="/huzhou/8ba2b8da90b955afx/?fr_page=index&amp;fr_pos=rec&amp;fr_no=1&amp;from=index">
+                <li class="list-item">
+                    <a class="car-info" href="javascript:void(0);">
                         <div class="car-img">
-                            <img data-role="lazyloadImg" class="js-lazy-load" src="https://image.guazistatic.com/gz01181005/13/53/60cd2860dc011c6cd7a7376eb8a8bfd0.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" data-url="https://image.guazistatic.com/gz01181005/13/53/60cd2860dc011c6cd7a7376eb8a8bfd0.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" alt="哈弗H6 2014款 运动版 1.5T 手动两驱精英型">
+                            <img data-role="lazyloadImg" class="js-lazy-load" src="/static/images/tabnav-img2.jpg" alt="哈弗H6 2014款 运动版 1.5T 手动两驱精英型">
                         </div>
                         <h3 class="car-name">哈弗H6 2014款 运动版 1.5T 手动两驱精英型</h3>
                         <div class="car-km">
@@ -43,10 +43,10 @@
                         <p class="page-size" style="display: none">1/50</p>
                     </a>
                 </li>
-                <li class="list-item" data-clue="57143789" data-type="city" data-gzlog="tracking_type=click&amp;eventid=0290230000000118&amp;carid=57143789&amp;position=2&amp;is_baomai=0" data-scroll-track="57143789@0@0@0&amp;92803073">
-                    <a class="car-info" href="/huzhou/ae19f180d6aa17aax/?fr_page=index&amp;fr_pos=rec&amp;fr_no=2&amp;from=index">
+                <li class="list-item">
+                    <a class="car-info" href="javascript:void(0);">
                         <div class="car-img">
-                            <img data-role="lazyloadImg" class="js-lazy-load" src="https://image.guazistatic.com/gz01181027/14/10/b4bbbf08a7ea93a2717d0a62004ff607.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" data-url="https://image.guazistatic.com/gz01181027/14/10/b4bbbf08a7ea93a2717d0a62004ff607.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" alt="雪佛兰 科鲁兹 2013款 1.6L SL天窗版 MT">
+                            <img data-role="lazyloadImg" class="js-lazy-load" src="/static/images/tabnav-img3.jpg" alt="雪佛兰 科鲁兹 2013款 1.6L SL天窗版 MT">
                         </div>
                         <h3 class="car-name">雪佛兰 科鲁兹 2013款 1.6L SL天窗版 MT</h3>
                         <div class="car-km">
@@ -61,10 +61,10 @@
                         <p class="page-size" style="display: none">1/50</p>
                     </a>
                 </li>
-                <li class="list-item" data-clue="57061205" data-type="city" data-gzlog="tracking_type=click&amp;eventid=0290230000000118&amp;carid=57061205&amp;position=3&amp;is_baomai=0" data-scroll-track="57061205@0@1@0&amp;92803073">
-                    <a class="car-info" href="/huzhou/4691dae345bc31b2x/?fr_page=index&amp;fr_pos=rec&amp;fr_no=3&amp;from=index">
+                <li class="list-item">
+                    <a class="car-info" href="javascript:void(0);">
                         <div class="car-img">
-                            <img data-role="lazyloadImg" class="js-lazy-load" src="https://image.guazistatic.com/gz01181027/09/33/361261835d066cdd473d4e47904aeb0d.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" data-url="https://image.guazistatic.com/gz01181027/09/33/361261835d066cdd473d4e47904aeb0d.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" alt="现代ix25 2015款 1.6L 自动两驱智能型GLS">
+                            <img data-role="lazyloadImg" class="js-lazy-load" src="/static/images/tabnav-img4.jpg" alt="现代ix25 2015款 1.6L 自动两驱智能型GLS">
                         </div>
                         <h3 class="car-name">现代ix25 2015款 1.6L 自动两驱智能型GLS</h3>
                         <div class="car-km">
@@ -79,10 +79,10 @@
                         <p class="page-size" style="display: none">1/50</p>
                     </a>
                 </li>
-                <li class="list-item" data-clue="59397805" data-type="city" data-gzlog="tracking_type=click&amp;eventid=0290230000000118&amp;carid=59397805&amp;position=4&amp;is_baomai=0" data-scroll-track="59397805@0@2@0&amp;92803073">
-                    <a class="car-info" href="/huzhou/dc08aab729621b42x/?fr_page=index&amp;fr_pos=rec&amp;fr_no=4&amp;from=index">
+                <li class="list-item">
+                    <a class="car-info" href="javascript:void(0);">
                         <div class="car-img">
-                            <img data-role="lazyloadImg" class="js-lazy-load" src="https://image.guazistatic.com/gz01181111/10/48/aba9f9edba8b7444b8af9e426badf90c.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" data-url="https://image.guazistatic.com/gz01181111/10/48/aba9f9edba8b7444b8af9e426badf90c.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" alt="比亚迪S6 2013款 劲悦版 2.0L 手动豪华型 5座">
+                            <img data-role="lazyloadImg" class="js-lazy-load" src="/static/images/tabnav-img5.jpg" alt="比亚迪S6 2013款 劲悦版 2.0L 手动豪华型 5座">
                         </div>
                         <h3 class="car-name">比亚迪S6 2013款 劲悦版 2.0L 手动豪华型 5座</h3>
                         <div class="car-km">
@@ -97,10 +97,10 @@
                         <p class="page-size" style="display: none">1/50</p>
                     </a>
                 </li>
-                <li class="list-item" data-clue="60308239" data-type="city" data-gzlog="tracking_type=click&amp;eventid=0290230000000118&amp;carid=60308239&amp;position=5&amp;is_baomai=0" data-scroll-track="60308239@0@3@0&amp;92803073">
-                    <a class="car-info" href="/huzhou/36fff7c3fe4d7176x/?fr_page=index&amp;fr_pos=rec&amp;fr_no=5&amp;from=index">
+                <li class="list-item">
+                    <a class="car-info" href="javascript:void(0);">
                         <div class="car-img">
-                            <img data-role="lazyloadImg" class="js-lazy-load" src="https://image.guazistatic.com/gz01181117/13/04/8be9a74dc019ea8a9813cadc5f91c7ae.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" data-url="https://image.guazistatic.com/gz01181117/13/04/8be9a74dc019ea8a9813cadc5f91c7ae.jpg@base@tag=imgScale&amp;w=287&amp;h=192&amp;c=1&amp;m=2&amp;q=88" alt="江淮 瑞风S3 2014款 1.5L CVT豪华智能型">
+                            <img data-role="lazyloadImg" class="js-lazy-load" src="/static/images/tabnav-img6.jpg" alt="江淮 瑞风S3 2014款 1.5L CVT豪华智能型">
                         </div>
                         <h3 class="car-name">江淮 瑞风S3 2014款 1.5L CVT豪华智能型</h3>
                         <div class="car-km">
