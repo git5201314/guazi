@@ -1,13 +1,8 @@
 <template>
   <div class="city">
-    <city-header></city-header>
-    <city-list
-      :city="city"
-      :hot="hotCities"
-      :cities="cities"
-      :alphaCity="alphaCity"
-      :alphaIndex="alphaIndex"
-    ></city-list>
+    <city-header v-model="keywords"></city-header>
+    <city-search :cities="cities" :keywords="keywords"></city-search>
+    <city-list :hot="hotCities" :cities="cities" :alphaCity="alphaCity" :alphaIndex="alphaIndex"></city-list>
     <city-alpha :cities="cities" @alphabetChange="alphabetChangeHandler"></city-alpha>
   </div>
 </template>
@@ -16,6 +11,7 @@
 import CityHeader from "./components/Header";
 import CityList from "./components/List";
 import CityAlpha from "./components/Alphabet";
+import CitySearch from "./components/Search";
 import axios from "axios";
 
 export default {
@@ -23,15 +19,16 @@ export default {
   components: {
     CityHeader,
     CityList,
-    CityAlpha
+    CityAlpha,
+    CitySearch
   },
   data() {
     return {
-      city: "",
       hotCities: [],
       alphaCity: "",
       alphaIndex: 0,
-      cities: {}
+      cities: {},
+      keywords: ""
     };
   },
   methods: {
@@ -46,7 +43,6 @@ export default {
       var data = res.data;
       if (data.ret) {
         data = data.data;
-        v.city = data.city;
         v.cities = data.cities;
         v.hotCities = data.hotCities;
       }

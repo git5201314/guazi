@@ -1,16 +1,17 @@
 <template>
-    <div class="header-search" id="open-search">
-        <router-link to="/city" class="local-city">上海
-          <span class="iconfont">&#xe62d;</span>
-        </router-link>
-        <div class="search-ipt">
-          <!-- <span class="head-icon-search iconfont">&#xe61a;</span>
-          搜索您要的车 -->
-          <input type="text" placeholder="输入城市名称或拼音" />
-        </div>
-        <a href="javascript:void(0);" class="head-icon-im iconfont">&#xe641;</a>
-        <a href="javascript:void(0);" class="head-icon-user iconfont">&#xe607;</a>
+  <div class="header-search" id="open-search">
+    <router-link to="/city" class="local-city">
+      {{$store.state.city}}
+      <span class="iconfont">&#xe62d;</span>
+    </router-link>
+    <div class="search-ipt">
+      <!-- <span class="head-icon-search iconfont">&#xe61a;</span>
+      搜索您要的车-->
+      <input type="text" placeholder="输入城市名称或拼音">
     </div>
+    <a href="javascript:void(0);" class="head-icon-im iconfont">&#xe641;</a>
+    <a href="javascript:void(0);" class="head-icon-user iconfont">&#xe607;</a>
+  </div>
 </template>
 
 <script>

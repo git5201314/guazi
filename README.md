@@ -200,3 +200,9 @@ moveHandler(event) {
   }
 }
 ```
+
+# 第十一天
+
+城市列表搜索制作
+如果多个组件之间没有关联，可以使用 vuex 实现数据共享
+组件不应该直接修改 state 数据，而是通过 $store.dispatch('name', para) 方法 actions，也可以直接通过$store.commit('name', para) 提交 state 的数据

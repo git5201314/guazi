@@ -1,18 +1,29 @@
 <template>
-    <div class="city-header">
-        <div class="city-title ">
-            <router-link to="/" tag="span">&lt;</router-link>
-            <h3>城市选择</h3>
-        </div>
-        <div class="city-input">
-            <input type="text" placeholder="输入城市名或拼音"/>
-        </div>
+  <div class="city-header">
+    <div class="city-title">
+      <router-link to="/" tag="span">&lt;</router-link>
+      <h3>城市选择</h3>
     </div>
+    <div class="city-input">
+      <input
+        type="text"
+        placeholder="输入城市名或拼音"
+        :value="keywords"
+        @input="$emit('input', $event.target.value)"
+      >
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "CityHeader"
+  name: "CityHeader",
+  inheritAttrs: false,
+  data() {
+    return {
+      keywords: ""
+    };
+  }
 };
 </script>
 
