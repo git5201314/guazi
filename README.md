@@ -160,3 +160,43 @@ proxyTable: {
   <!-- 这里可以放一些其它的 DOM，但不会影响滚动 -->
 </div>
 ```
+
+# 第十天
+
+城市列表联动制作
+
+```
+点击 A、B、C 字母，要定位到对应的列表项
+在 字母列表上滑动，也要定位对应的列表项
+
+处理字母列表上滑动时，使用的是 touchmove 事件，需要做节流优化
+touchmove的事件对象event的 touches 返回一个TouchList 对象，是一个Touch组合
+Touch对象的属性如下：
+target：触摸点开始时的元素
+clientX：触摸点相对于浏览器窗口左上角的水平距离
+clientY：触摸点相对于浏览器窗口左上角的垂直距离
+screenX：触摸点相对于屏幕左上角的水平距离
+screenY：触摸点相对于屏幕左上角的垂直距离
+pageX：触摸点相对于网页左上角的水平距离（包括页面的滚动距离）
+pageY：触摸点相对于网页左上角的垂直距离（包括页面的滚动距离）
+
+moveHandler(event) {
+  if (this.touchStatus) {
+    if (this.timer) {
+      clearTimeout(this.timer);
+    }
+
+    this.timer = setTimeout(() => {
+      var alphaA = this.$refs.alphabet[0],
+        alphaATop = alphaA.getBoundingClientRect().top,
+        alphaAHeight = alphaA.offsetHeight,
+        touchY = event.touches[0].clientY - alphaATop,
+        index = Math.floor(touchY / alphaAHeight);
+
+      if (index >= 0 && index < this.citiesName.length) {
+        this.$emit("alphabetChange", this.citiesName[index], index);
+      }
+    }, 20);
+  }
+}
+```

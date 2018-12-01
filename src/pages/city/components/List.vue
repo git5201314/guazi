@@ -1,30 +1,28 @@
 <template>
-    <div class="city-con" ref="con">
-        <div>
-            <div class="city-con-item">
-                <h3 class="city-title border-tombottom">
-                    当前城市
-                </h3>
-                <div class="city-list">
-                    <button type="button">{{city}}</button>
-                </div>
-            </div>
-            <div class="city-con-item">
-                <h3 class="city-title border-tombottom">
-                    热门城市
-                </h3>
-                <div class="city-list">
-                    <button type="button" v-for="item of hot" :key="item.id" v-text="item.name"></button>
-                </div>
-            </div>
-            <div class="city-con-item" v-for="(list, key) of cities" :key="key">
-                <h3 class="city-title border-tombottom" v-text="key"></h3>
-                <ul>
-                    <li class="border-bottom" v-for="item of list" :key="item.id"><button type="button" v-text="item.name"></button></li>
-                </ul>
-            </div>
+  <div class="city-con" ref="con">
+    <div>
+      <div class="city-con-item">
+        <h3 class="city-title border-tombottom">当前城市</h3>
+        <div class="city-list">
+          <button type="button">{{city}}</button>
         </div>
+      </div>
+      <div class="city-con-item">
+        <h3 class="city-title border-tombottom">热门城市</h3>
+        <div class="city-list">
+          <button type="button" v-for="item of hot" :key="item.id" v-text="item.name"></button>
+        </div>
+      </div>
+      <div class="city-con-item" v-for="(list, key) of cities" :key="key">
+        <h3 class="city-title border-tombottom" v-text="key" ref="alphabetName"></h3>
+        <ul>
+          <li class="border-bottom" v-for="item of list" :key="item.id">
+            <button type="button" v-text="item.name"></button>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -37,8 +35,15 @@ export default {
       type: String,
       default: "上海"
     },
+    alphaCity: String,
+    alphaIndex: Number,
     hot: Array,
     cities: Object
+  },
+  watch: {
+    alphaCity(newVal, oldVal) {
+      this.scroll.scrollToElement(this.$refs.alphabetName[this.alphaIndex]);
+    }
   },
   mounted() {
     this.scroll = new BScroll(this.$refs.con);

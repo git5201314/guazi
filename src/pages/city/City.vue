@@ -1,9 +1,15 @@
 <template>
-    <div class="city">
-        <city-header></city-header>
-        <city-list :city="city" :hot="hotCities" :cities="cities"></city-list>
-        <city-alpha :cities="cities"></city-alpha>
-    </div>
+  <div class="city">
+    <city-header></city-header>
+    <city-list
+      :city="city"
+      :hot="hotCities"
+      :cities="cities"
+      :alphaCity="alphaCity"
+      :alphaIndex="alphaIndex"
+    ></city-list>
+    <city-alpha :cities="cities" @alphabetChange="alphabetChangeHandler"></city-alpha>
+  </div>
 </template>
 
 <script>
@@ -23,8 +29,16 @@ export default {
     return {
       city: "",
       hotCities: [],
+      alphaCity: "",
+      alphaIndex: 0,
       cities: {}
     };
+  },
+  methods: {
+    alphabetChangeHandler(name, index) {
+      this.alphaCity = name;
+      this.alphaIndex = index;
+    }
   },
   mounted() {
     const v = this;

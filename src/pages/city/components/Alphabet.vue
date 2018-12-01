@@ -1,7 +1,17 @@
 <template>
-    <ul class="city-alphabet">
-        <li class="alpha-item" v-for="item of citiesName" :key="item" v-text="item"></li>
-    </ul>
+  <ul class="city-alphabet">
+    <li
+      class="alpha-item"
+      v-for="(item, index) of citiesName"
+      :key="item"
+      v-text="item"
+      ref="alphabet"
+      @click="$emit('alphabetChange', item, index)"
+      @touchstart="startHandler"
+      @touchmove="moveHandler"
+      @touchend="endHandler"
+    ></li>
+  </ul>
 </template>
 
 <script>
@@ -9,6 +19,39 @@ export default {
   name: "CityAlphabet",
   props: {
     cities: Object
+  },
+  data() {
+    return {
+      touchStatus: false,
+      timer: ""
+    };
+  },
+  methods: {
+    startHandler() {
+      this.touchStatus = true;
+    },
+    moveHandler(event) {
+      if (this.touchStatus) {
+        if (this.timer) {
+          clearTimeout(this.timer);
+        }
+
+        this.timer = setTimeout(() => {
+          var alphaA = this.$refs.alphabet[0],
+            alphaATop = alphaA.getBoundingClientRect().top,
+            alphaAHeight = alphaA.offsetHeight,
+            touchY = event.touches[0].clientY - alphaATop,
+            index = Math.floor(touchY / alphaAHeight);
+
+          if (index >= 0 && index < this.citiesName.length) {
+            this.$emit("alphabetChange", this.citiesName[index], index);
+          }
+        }, 20);
+      }
+    },
+    endHandler() {
+      this.touchStatus = false;
+    }
   },
   computed: {
     citiesName: function() {
